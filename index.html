@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Gravidez</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Gravidez</h1>
+  
+    <label for="data">Data de início da última menstruação:</label>
+    <input type="date" id="data">
+    <button onclick="calcularIdadeGestacional()">Calcular</button>
+  
+    <div id="resultado"></div>
+    <img id="imagem" src="img/default.png" alt="Imagem da gravidez">
+
+    <div class="tips-container">
+      <h2>Dicas de Cuidados Pré-Natais</h2>
+      <p>Aqui estão algumas dicas para cuidados pré-natais:</p>
+      <ul>
+        <li>Garanta uma dieta equilibrada e rica em nutrientes.</li>
+        <li>Realize exercícios leves e adequados para gestantes.</li>
+        <li>Mantenha-se hidratada e evite o consumo de álcool e cafeína.</li>
+        <li>Descanse o suficiente e evite o estresse excessivo.</li>
+        <li>Realize consultas médicas regulares e siga as orientações do seu médico.</li>
+      </ul>
+    </div>
+
+    <div class="community-container">
+      <h2>Depoimentos de Outras Mães</h2>
+      <div class="testimonial">
+        <p>- Maria</p>
+        <p>"A gravidez é uma experiência incrível. Aproveite cada momento e confie em si mesma. Você será uma ótima mãe!"</p>
+      </div>
+      <div class="testimonial">
+        <p>- Ana</p>
+        <p>"Lembre-se de cuidar de si mesma durante a gravidez. Tire um tempo para relaxar e se mimar. Você merece!"</p>
+      </div>
+      <!-- Adicione mais depoimentos conforme necessário -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

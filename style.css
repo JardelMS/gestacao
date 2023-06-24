@@ -1,0 +1,131 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 5px; /* Espaçamento superior */
+      padding-right: 5px; /* Espaçamento direito */
+      padding-bottom: 5px; /* Espaçamento inferior */
+      padding-left: 5px; /* Espaçamento esquerdo */
+      background-color: rgba(242, 242, 242, 0.9); /* Cor de fundo com opacidade */
+      animation: backgroundAnimation 10s linear infinite;
+      overflow: auto;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-color: #f8a5c2;
+      }
+      50% {
+        background-color: #a5c2f8;
+      }
+      100% {
+        background-color: #f8a5c2;
+      }
+    }
+
+    .container {
+      max-width: auto;
+      margin: 10 auto;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="date"],
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    .tips-container {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .countdown-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .community-container .testimonial {
+      margin-bottom: 20px;
+    }
+
+    .community-container .testimonial p {
+      margin-bottom: 5px;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Estilos para dispositivos móveis */
+    @media (max-width: 768px) {
+      body {
+        padding: 0; /* Remova o padding em dispositivos móveis */
+      }
+
+      .container {
+        max-width: 100%; /* Ajuste a largura máxima do container para preencher a largura da tela */
+        margin: 0; /* Remova as margens laterais em dispositivos móveis */
+        border-radius: 0; /* Remova o border-radius em dispositivos móveis */
+        box-shadow: none; /* Remova a sombra em dispositivos móveis */
+      }
+
+      h1 {
+        margin-bottom: 10px; /* Reduza a margem inferior do título em dispositivos móveis */
+      }
+
+      input[type="date"],
+      button {
+        padding: 8px; /* Reduza o tamanho do padding em dispositivos móveis */
+      }
+
+      img {
+        margin: 10px auto; /* Reduza a margem superior e inferior da imagem em dispositivos móveis */
+        max-width: 100%; /* Ajuste a largura máxima da imagem para preencher a largura do container */
+      }
+
+      ul {
+        margin-left: 15px; /* Ajuste a margem esquerda da lista em dispositivos móveis */
+      }
+    }
