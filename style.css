@@ -1,131 +1,176 @@
-    body {
-      font-family: Arial, sans-serif;
-      padding-top: 5px; /* Espaçamento superior */
-      padding-right: 5px; /* Espaçamento direito */
-      padding-bottom: 5px; /* Espaçamento inferior */
-      padding-left: 5px; /* Espaçamento esquerdo */
-      background-color: rgba(242, 242, 242, 0.9); /* Cor de fundo com opacidade */
-      animation: backgroundAnimation 10s linear infinite;
-      overflow: auto;
-    }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;
+  animation: backgroundAnimation 10s linear infinite;
+  overflow: auto;
+}
 
-    @keyframes backgroundAnimation {
-      0% {
-        background-color: #f8a5c2;
-      }
-      50% {
-        background-color: #a5c2f8;
-      }
-      100% {
-        background-color: #f8a5c2;
-      }
-    }
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f8a5c2;
+  }
+  50% {
+    background-color: #a5c2f8;
+  }
+  100% {
+    background-color: #f8a5c2;
+  }
+}
 
-    .container {
-      max-width: auto;
-      margin: 10 auto;
-      background-color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
+.container {
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
+label {
+  display: block;
+  margin-bottom: 10px;
+}
 
-    input[type="date"],
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-    }
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 
-    #resultado {
-      margin-top: 20px;
-      text-align: center;
-    }
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
-    img {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 20px auto;
-      border-radius: 5px;
-    }
+#resultado {
+  margin-top: 20px;
+  text-align: center;
+}
 
-    .tips-container {
-      margin-bottom: 20px;
-    }
+img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
+.tips-container {
+  margin-bottom: 20px;
+}
 
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-    .countdown-container {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
-    .community-container .testimonial {
-      margin-bottom: 20px;
-    }
+.countdown-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .community-container .testimonial p {
-      margin-bottom: 5px;
-    }
+.community-container .testimonial {
+  margin-bottom: 20px;
+}
 
-    @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+.community-container .testimonial p {
+  margin-bottom: 5px;
+}
 
-    /* Estilos para dispositivos móveis */
-    @media (max-width: 768px) {
-      body {
-        padding: 0; /* Remova o padding em dispositivos móveis */
-      }
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-      .container {
-        max-width: 100%; /* Ajuste a largura máxima do container para preencher a largura da tela */
-        margin: 0; /* Remova as margens laterais em dispositivos móveis */
-        border-radius: 0; /* Remova o border-radius em dispositivos móveis */
-        box-shadow: none; /* Remova a sombra em dispositivos móveis */
-      }
+/* Estilos para tornar a página responsiva */
 
-      h1 {
-        margin-bottom: 10px; /* Reduza a margem inferior do título em dispositivos móveis */
-      }
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
 
-      input[type="date"],
-      button {
-        padding: 8px; /* Reduza o tamanho do padding em dispositivos móveis */
-      }
+  .container {
+    width: 100%;
+    max-width: 600px;
+  }
 
-      img {
-        margin: 10px auto; /* Reduza a margem superior e inferior da imagem em dispositivos móveis */
-        max-width: 100%; /* Ajuste a largura máxima da imagem para preencher a largura do container */
-      }
+  img {
+    max-width: 100%;
+  }
+}
 
-      ul {
-        margin-left: 15px; /* Ajuste a margem esquerda da lista em dispositivos móveis */
-      }
-    }
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  input[type="date"],
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #resultado {
+    margin-top: 15px;
+  }
+
+  img {
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .countdown-container {
+    margin-bottom: 15px;
+  }
+
+  .community-container .testimonial p {
+    font-size: 12px;
+  }
+}
